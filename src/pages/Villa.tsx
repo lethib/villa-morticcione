@@ -96,13 +96,15 @@ export default function Villa() {
           className="flex-1 h-56 object-cover rounded-lg shadow-lg"
         />
         <iframe
+          width="853"
+          height="480"
           className="flex-1 h-56 rounded-lg shadow-lg"
-          src="https://www.youtube.com/embed/4yhi6r8XlE0"
-          title="Villa Morticcione"
+          src={`https://www.youtube.com/embed/RubCdxgDI8s`}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe>
+          title="Embedded youtube"
+        />
       </div>
     </div>
   );
