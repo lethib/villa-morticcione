@@ -1,103 +1,162 @@
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Clock, MapPin, Plane } from "lucide-react";
 import Image from "next/image";
+
+function Hero() {
+  return (
+    <div className="relative bg-gradient-to-br from-slate-50 via-white to-[#a0b4a0w] overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(251,146,60,0.05),transparent_70%)]"></div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+        <div className="space-y-4">
+          <div className="animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 bg-clip-text text-transparent leading-tight">
+              Villa Morticcione
+            </h1>
+            <div className="mt-4 h-1 w-24 bg-primary rounded-full mx-auto"></div>
+          </div>
+
+          <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 font-light tracking-wide">
+            Plage de Saint Cyprien - Porto Vecchio
+          </h2>
+
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed font-light">
+              Charmante villa située à 1 kilomètre de la magnifique plage de
+              Saint Cyprien.
+              <br className="hidden sm:block" />
+              Avec sa piscine privée, elle vous attend pour des vacances de
+              détente,
+              <br className="hidden sm:block" />
+              au grand calme, sous le soleil de la Corse.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 pt-6">
+            <div className="flex items-center gap-2 text-gray-600 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 shadow-md">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span className="text-sm font-medium">3 chambres</span>
+            </div>
+            <div className="flex items-center gap-2 text-gray-600 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 shadow-md">
+              <div className="w-2 h-2 bg-secondary rounded-full"></div>
+              <span className="text-sm font-medium">Piscine privée</span>
+            </div>
+            <div className="flex items-center gap-2 text-gray-600 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 shadow-md">
+              <div className="w-2 h-2 bg-thirdly rounded-full"></div>
+              <span className="text-sm font-medium">1km de la plage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Hero />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* Main Image */}
+          <div className="lg:col-span-2">
+            <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
+              <Image
+                src="/images/house.avif"
+                alt="Villa Morticcione"
+                width={800}
+                height={500}
+                className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="flex flex-wrap gap-2">
+                  <Badge
+                    variant="secondary"
+                    className="bg-white/90 text-gray-800"
+                  >
+                    Villa de luxe
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-white/90 text-gray-800"
+                  >
+                    Vue mer
+                  </Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-white/90 text-gray-800"
+                  >
+                    Piscine chauffée
+                  </Badge>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          {/* Gallery & Info */}
+          <div className="space-y-6">
+            {/* Mini Gallery */}
+            <div className="grid grid-cols-2 gap-4">
+              {[1, 2, 3, 4].map((i) => (
+                <div
+                  key={i}
+                  className="relative group overflow-hidden rounded-xl shadow-lg"
+                >
+                  <Image
+                    src="/images/chambre.jpg"
+                    alt={`Villa vue ${i}`}
+                    width={200}
+                    height={96}
+                    className="w-full h-24 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
+              ))}
+            </div>
+
+            {/* Location Card */}
+            <Card className="border-0 shadow-lg bg-gradient-to-br from-white to-gray-50">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">
+                      Villa Morticcione
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Lieu dit Morticcione
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-2 text-sm text-gray-600">
+                  <p>Route de Pinarello</p>
+                  <p>20137 Lecci, Corse</p>
+                  <p className="font-mono text-xs bg-gray-100 rounded px-2 py-1 inline-block">
+                    GPS: 41°38&apos;53&quot;N 9°20&apos;40&quot;E
+                  </p>
+                </div>
+
+                <div className="mt-6 space-y-3">
+                  <div className="flex items-center gap-3 text-sm">
+                    {" "}
+                    <Clock className="w-4 h-4 text-primary" />
+                    <span>15 min de Porto Vecchio</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-sm">
+                    <Plane className="w-4 h-4 text-secondary" />
+                    <span>30 min de l&apos;aéroport de Figari</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </>
   );
 }

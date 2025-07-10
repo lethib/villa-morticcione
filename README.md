@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Villa Morticcione SSR
 
-## Getting Started
+A luxury villa rental website built with Next.js 15 SSR for optimal SEO performance. Villa Morticcione is located in the beautiful region of Tuscany, Italy, and offers premium accommodations for weddings, events, and exclusive getaways.
 
-First, run the development server:
+## 🏗️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: shadcn/ui
+- **Package Manager**: Bun
+- **Deployment**: Optimized for Vercel
+
+## 🚀 Features
+
+- **SEO Optimized**: Server-side rendering for better Google indexing
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Modern UI**: Beautiful components using shadcn/ui
+- **Performance**: Optimized for Core Web Vitals
+- **Accessibility**: WCAG compliant components and semantic HTML
+
+## 🛠️ Getting Started
+
+First, install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+```
+
+Then, run the development server:
+
+```bash
 bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                 # Next.js App Router pages
+│   ├── layout.tsx      # Root layout with SEO metadata
+│   ├── page.tsx        # Homepage
+│   └── globals.css     # Global styles
+├── components/         # Reusable React components
+│   ├── ui/            # shadcn/ui components
+│   ├── Header.tsx     # Navigation header
+│   └── Footer.tsx     # Site footer
+└── lib/               # Utility functions
+    └── utils.ts       # Common utilities
+```
 
-## Learn More
+## 🎨 Design System
 
-To learn more about Next.js, take a look at the following resources:
+This project uses shadcn/ui components built on top of Radix UI primitives and styled with Tailwind CSS. The design focuses on:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Clean, luxury aesthetic appropriate for a high-end villa rental
+- Excellent typography hierarchy for readability
+- Consistent spacing and color palette
+- Smooth animations and transitions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📧 Contact
 
-## Deploy on Vercel
+For inquiries about Villa Morticcione, please contact:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Email: info@villamorticcione.com
+- Phone: +39 XXX XXX XXXX
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+All rights reserved - Villa Morticcione
