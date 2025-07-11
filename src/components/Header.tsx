@@ -5,10 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { path: "/", label: "Accueil" },
-  { path: "/villa/", label: "La Villa" },
-  { path: "/calendar/", label: "Calendrier et Tarifs" },
-  { path: "/contact/", label: "Nous contacter" },
+  { path: "/", label: "Accueil", mobileLabel: "Home" },
+  { path: "/villa/", label: "La Villa", mobileLabel: "Villa" },
+  { path: "/calendar/", label: "Calendrier et Tarifs", mobileLabel: "Tarifs" },
+  { path: "/contact/", label: "Nous contacter", mobileLabel: "Contact" },
 ];
 
 export function Header() {
@@ -32,17 +32,7 @@ export function Header() {
               >
                 <Link href={item.path} className="whitespace-nowrap">
                   <span className="hidden sm:inline">{item.label}</span>
-                  <span className="sm:hidden">
-                    {item.label === "Accueil"
-                      ? "Home"
-                      : item.label === "La Villa"
-                      ? "Villa"
-                      : item.label === "Calendrier et Tarifs"
-                      ? "Tarifs"
-                      : item.label === "Nous contacter"
-                      ? "Contact"
-                      : item.label}
-                  </span>
+                  <span className="sm:hidden">{item.mobileLabel}</span>
                 </Link>
               </Button>
             ))}

@@ -1,3 +1,5 @@
+import { X } from "lucide-react";
+
 const calendarData = {
   "avr-25": {
     name: "Avril 2025",
@@ -111,8 +113,6 @@ const calendarData = {
     ],
   },
 };
-
-import { X } from "lucide-react";
 
 const dayNames = ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"];
 
