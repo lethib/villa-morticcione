@@ -1,3 +1,5 @@
+import { X } from "lucide-react";
+
 const calendarData = {
   "avr-25": {
     name: "Avril 2025",
@@ -115,9 +117,7 @@ const calendarData = {
 const dayNames = ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"];
 
 const getStatusColor = (status: string, season: string) => {
-  if (status === "reserved") return "bg-black text-white";
-
-  // Available days by season
+  // Available and reserved days use the same colors based on season
   switch (season) {
     case "basse":
       return "bg-green-500 text-white";
@@ -164,12 +164,19 @@ export const CalendarMonth = ({ monthKey }: { monthKey: string }) => {
         {month.availability.map((dayInfo) => (
           <div
             key={dayInfo.day}
-            className={`text-center p-1 rounded text-xs font-medium min-h-[24px] flex items-center justify-center ${getStatusColor(
+            className={`text-center p-1 rounded text-xs font-medium min-h-[24px] flex items-center justify-center relative ${getStatusColor(
               dayInfo.status,
               dayInfo.season
             )}`}
           >
             {dayInfo.day}
+            {dayInfo.status === "reserved" && (
+              <X
+                size={38}
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black"
+                aria-label="Reserved"
+              />
+            )}
           </div>
         ))}
       </div>
