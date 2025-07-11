@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
   { path: "/", label: "Accueil" },
-  { path: "/villa", label: "La Villa" },
-  { path: "/calendar", label: "Calendrier et Tarifs" },
-  { path: "/contact", label: "Nous contacter" },
+  { path: "/villa/", label: "La Villa" },
+  { path: "/calendar/", label: "Calendrier et Tarifs" },
+  { path: "/contact/", label: "Nous contacter" },
 ];
 
 export function Header() {
