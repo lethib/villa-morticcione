@@ -1,5 +1,14 @@
 import { CalendarDay, Season, ThisYearBookableMonth } from "../_types";
 
+/**
+ * Generates an array of `CalendarDay` objects for a given range of days, assigning each day a specified season and status.
+ *
+ * @param fromDay - The starting day of the range (inclusive).
+ * @param toDay - The ending day of the range (inclusive).
+ * @param season - The season to assign to each generated day.
+ * @param status - The availability status to assign to each generated day ("available" or "reserved").
+ * @returns An array of `CalendarDay` objects representing each day in the specified range.
+ */
 const createDays = (
   fromDay: number,
   toDay: number,
