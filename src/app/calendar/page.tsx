@@ -7,29 +7,25 @@ const pricingTiers = [
   {
     name: "Basse Saison",
     price: "1200",
-    color: "from-green-500 to-green-600",
-    bgColor: "bg-green-500",
+    color: "from-calendar-low-season/75 to-calendar-low-season",
     period: "Automne, hiver et début printemps",
   },
   {
     name: "Moyenne Saison",
     price: "1800",
-    color: "from-yellow-500 to-yellow-600",
-    bgColor: "bg-yellow-500",
+    color: "from-calendar-mid-season/75 to-calendar-mid-season",
     period: "Mai, juin et septembre",
   },
   {
     name: "Haute Saison",
     price: "2500",
-    color: "from-pink-500 to-pink-600",
-    bgColor: "bg-pink-500",
+    color: "from-calendar-high-season/75 to-calendar-high-season",
     period: "Juillet et première moitié d'août",
   },
   {
     name: "Très Haute Saison",
     price: "3000",
-    color: "from-red-700 to-red-800",
-    bgColor: "bg-red-700",
+    color: "from-calendar-very-high-season/75 to-calendar-very-high-season",
     period: "Seconde moitié d'août et ponts",
   },
 ];
@@ -74,25 +70,25 @@ export default function Calendar() {
                   <h4 className="font-semibold text-gray-900 mb-4">Légende</h4>
                   <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
                     <div className="flex items-center gap-2">
-                      <div className="w-5 h-5 bg-green-500 rounded"></div>
+                      <div className="w-5 h-5 bg-calendar-low-season rounded"></div>
                       <span className="text-sm text-gray-600">
                         Basse Saison
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-5 h-5 bg-yellow-500 rounded"></div>
+                      <div className="w-5 h-5 bg-calendar-mid-season rounded"></div>
                       <span className="text-sm text-gray-600">
                         Moyenne Saison
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-5 h-5 bg-pink-500 rounded"></div>
+                      <div className="w-5 h-5 bg-calendar-high-season rounded"></div>
                       <span className="text-sm text-gray-600">
                         Haute Saison
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-5 h-5 bg-red-700 rounded"></div>
+                      <div className="w-5 h-5 bg-calendar-very-high-season rounded"></div>
                       <span className="text-sm text-gray-600">
                         Très Haute Saison
                       </span>
