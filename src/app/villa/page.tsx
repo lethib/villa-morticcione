@@ -12,7 +12,7 @@ export const metadata = {
 const features = [
   {
     icon: Bed,
-    img: "/villa-morticcione/images/chambre.avif",
+    img: "/images/chambre.avif",
     title: "Chambres & Sanitaires",
     color: "bg-secondary",
     items: [
@@ -25,7 +25,7 @@ const features = [
   },
   {
     icon: Utensils,
-    img: "/villa-morticcione/images/kitchen.avif",
+    img: "/images/kitchen.avif",
     title: "Cuisine & Salon",
     color: "bg-primary",
     items: [
@@ -36,7 +36,7 @@ const features = [
   },
   {
     icon: Trees,
-    img: "/villa-morticcione/images/outside.avif",
+    img: "/images/outside.avif",
     title: "Extérieur",
     color: "bg-thirdly",
     items: [
@@ -110,7 +110,7 @@ export default function Villa() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="relative group overflow-hidden rounded-2xl shadow-lg">
           <Image
-            src="/villa-morticcione/images/house.avif"
+            src="/images/house.avif"
             alt="Villa Morticcione"
             width={800}
             height={500}

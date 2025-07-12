@@ -62,7 +62,7 @@ export default function Home() {
           <div className="lg:col-span-2">
             <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
               <Image
-                src="/villa-morticcione/images/house.avif"
+                src="/images/house.avif"
                 alt="Villa Morticcione"
                 width={800}
                 height={500}
@@ -105,7 +105,7 @@ export default function Home() {
                   className="relative group overflow-hidden rounded-xl shadow-lg"
                 >
                   <Image
-                    src="/villa-morticcione/images/chambre.jpg"
+                    src="/images/chambre.jpg"
                     alt={`Villa vue ${i}`}
                     width={200}
                     height={96}
