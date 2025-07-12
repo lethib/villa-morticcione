@@ -27,8 +27,7 @@ export function generatePageMetadata({
     },
   ],
 }: SEOPageProps): Metadata {
-  const baseUrl = "https://www.villa-morticcione.com";
-  const url = `${baseUrl}${path}`;
+  const url = `${siteConfig.url}${path}`;
 
   return {
     title,
@@ -49,7 +48,7 @@ export function generatePageMetadata({
       siteName: "Villa Morticcione",
       images: images.map((img) => ({
         ...img,
-        url: img.url.startsWith("/") ? `${baseUrl}${img.url}` : img.url,
+        url: img.url.startsWith("/") ? `${siteConfig.url}${img.url}` : img.url,
       })),
     },
     twitter: {
@@ -57,7 +56,7 @@ export function generatePageMetadata({
       title,
       description,
       images: images.map((img) =>
-        img.url.startsWith("/") ? `${baseUrl}${img.url}` : img.url
+        img.url.startsWith("/") ? `${siteConfig.url}${img.url}` : img.url
       ),
     },
     alternates: {
