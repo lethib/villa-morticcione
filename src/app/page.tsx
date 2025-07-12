@@ -1,7 +1,48 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, MapPin, Plane } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title:
+    "Villa Morticcione - Location Villa Corse avec Piscine Privée à Porto Vecchio",
+  description:
+    "Découvrez Villa Morticcione, une charmante villa de 3 chambres avec piscine privée à seulement 1km de la plage de Saint Cyprien près de Porto Vecchio. Location saisonnière en Corse du Sud pour des vacances inoubliables.",
+  keywords: [
+    "villa morticcione",
+    "location villa corse porto vecchio",
+    "villa piscine privée saint cyprien",
+    "vacances corse du sud",
+    "location saisonnière porto vecchio",
+    "villa 3 chambres corse",
+    "plage saint cyprien corse",
+  ],
+  openGraph: {
+    title: "Villa Morticcione - Location Villa Corse avec Piscine Privée",
+    description:
+      "Villa de charme avec piscine privée à 1km de la plage de Saint Cyprien, Porto Vecchio",
+    url: "https://www.villa-morticcione.com",
+    images: [
+      {
+        url: "/images/house.avif",
+        width: 1200,
+        height: 630,
+        alt: "Villa Morticcione - Vue extérieure avec piscine",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Villa Morticcione - Location Villa Corse avec Piscine Privée",
+    description:
+      "Villa de charme avec piscine privée à 1km de la plage de Saint Cyprien, Porto Vecchio",
+    images: ["/images/house.avif"],
+  },
+  alternates: {
+    canonical: "https://www.villa-morticcione.com",
+  },
+};
 
 function Hero() {
   return (

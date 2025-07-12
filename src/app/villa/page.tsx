@@ -4,9 +4,54 @@ import { Bed, Trees, Utensils, Waves } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "La Villa - Villa Morticcione",
+  title: "La Villa - Équipements et Aménagements | Villa Morticcione",
   description:
-    "Découvrez la magnifique Villa Morticcione, un joyau de l'architecture toscane situé au cœur de la campagne italienne.",
+    "Découvrez les équipements de Villa Morticcione : 3 chambres avec salles d'eau, cuisine équipée, salon, piscine 7x4m avec système au sel, terrasse avec vue. Villa de charme près de Porto Vecchio.",
+  keywords: [
+    "villa morticcione équipements",
+    "3 chambres corse",
+    "piscine 7x4 corse",
+    "cuisine équipée villa corse",
+    "salle d'eau villa porto vecchio",
+    "terrasse piscine corse",
+    "villa aménagée saint cyprien",
+  ],
+  openGraph: {
+    title: "La Villa - Équipements et Aménagements | Villa Morticcione",
+    description:
+      "3 chambres avec salles d'eau, cuisine équipée, piscine 7x4m au sel. Villa de charme entièrement équipée près de Porto Vecchio.",
+    url: "https://www.villa-morticcione.com/villa",
+    images: [
+      {
+        url: "/images/kitchen.avif",
+        width: 1200,
+        height: 630,
+        alt: "Cuisine équipée Villa Morticcione",
+      },
+      {
+        url: "/images/chambre.avif",
+        width: 1200,
+        height: 630,
+        alt: "Chambre Villa Morticcione avec salle d'eau",
+      },
+      {
+        url: "/images/outside.avif",
+        width: 1200,
+        height: 630,
+        alt: "Terrasse et piscine Villa Morticcione",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "La Villa - Équipements et Aménagements | Villa Morticcione",
+    description:
+      "3 chambres avec salles d'eau, cuisine équipée, piscine 7x4m au sel. Villa entièrement équipée près de Porto Vecchio.",
+    images: ["/images/kitchen.avif"],
+  },
+  alternates: {
+    canonical: "https://www.villa-morticcione.com/villa",
+  },
 };
 
 const features = [
