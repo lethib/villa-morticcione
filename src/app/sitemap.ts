@@ -1,29 +1,30 @@
+import { siteConfig } from "@/lib/metadata";
 import { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.villa-morticcione.com";
+export const dynamic = "force-static";
 
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: baseUrl,
+      url: siteConfig.url,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: `${baseUrl}/villa`,
+      url: `${siteConfig.url}/villa`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/calendar`,
+      url: `${siteConfig.url}/calendar`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${siteConfig.url}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
