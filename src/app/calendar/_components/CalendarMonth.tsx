@@ -31,7 +31,7 @@ export const CalendarMonth = ({
       <div className="grid grid-cols-7 gap-1">
         {/* Empty cells for days before month starts */}
         {Array.from(
-          { length: monthAvailabilitiesAndSeason.firstDay },
+          { length: monthAvailabilitiesAndSeason.firstDay - 1 },
           (_, i) => (
             <div key={`empty-${i}`} className="p-1"></div>
           )
