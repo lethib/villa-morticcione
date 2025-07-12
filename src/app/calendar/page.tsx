@@ -1,7 +1,47 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalendarIcon, Euro, Info } from "lucide-react";
+import { Metadata } from "next";
 import { CalendarMonth } from "./_components/CalendarMonth";
+
+export const metadata: Metadata = {
+  title: "Calendrier & Tarifs - Disponibilités Villa Morticcione",
+  description:
+    "Consultez les disponibilités et tarifs de Villa Morticcione selon les saisons. De 1200€ à 3000€ par semaine. Réservez votre séjour en Corse près de Porto Vecchio et Saint Cyprien.",
+  keywords: [
+    "tarifs villa morticcione",
+    "prix location villa corse",
+    "disponibilités villa porto vecchio",
+    "calendrier réservation corse",
+    "tarif villa saint cyprien",
+    "prix semaine villa corse",
+    "réservation villa corse du sud",
+  ],
+  openGraph: {
+    title: "Calendrier & Tarifs - Disponibilités Villa Morticcione",
+    description:
+      "Tarifs de 1200€ à 3000€ par semaine selon la saison. Consultez les disponibilités pour votre séjour en Corse.",
+    url: "https://www.villa-morticcione.com/calendar",
+    images: [
+      {
+        url: "/images/house.avif",
+        width: 1200,
+        height: 630,
+        alt: "Villa Morticcione - Calendrier et tarifs",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Calendrier & Tarifs - Villa Morticcione",
+    description:
+      "Tarifs de 1200€ à 3000€ par semaine. Consultez les disponibilités pour votre séjour en Corse.",
+    images: ["/images/house.avif"],
+  },
+  alternates: {
+    canonical: "https://www.villa-morticcione.com/calendar",
+  },
+};
 
 const pricingTiers = [
   {
