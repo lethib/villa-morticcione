@@ -18,7 +18,7 @@ export const availabilitiesAndSeason: Record<
   {
     name: string;
     days: number;
-    firstDay: number; // 0=Monday, 1=Tuesday, etc.
+    firstDay: number;
     availability: Array<CalendarDay>;
   }
 > = {
