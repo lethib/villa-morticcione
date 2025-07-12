@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Villa Morticcione - Luxury Villa Rental in Tuscany",
+  title: "Villa Morticcione - Rental in Corsica",
   description:
     "Experience the ultimate luxury at Villa Morticcione, a stunning private villa rental in the heart of Tuscany. Perfect for weddings, events, and exclusive getaways.",
   keywords: [
