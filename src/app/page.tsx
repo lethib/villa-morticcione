@@ -76,11 +76,13 @@ function Hero() {
           <div className="flex flex-wrap justify-center gap-4 pt-6">
             <div className="flex items-center gap-2 text-gray-600 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 shadow-md">
               <div className="w-2 h-2 bg-primary rounded-full"></div>
-              <span className="text-sm font-medium">3 chambres</span>
+              <span className="text-sm font-medium">3 suites climatisées</span>
             </div>
             <div className="flex items-center gap-2 text-gray-600 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 shadow-md">
               <div className="w-2 h-2 bg-secondary rounded-full"></div>
-              <span className="text-sm font-medium">Piscine privée</span>
+              <span className="text-sm font-medium">
+                Jusqu&apos;à 8 personnes
+              </span>
             </div>
             <div className="flex items-center gap-2 text-gray-600 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 shadow-md">
               <div className="w-2 h-2 bg-thirdly rounded-full"></div>
@@ -117,19 +119,19 @@ export default function Home() {
                     variant="secondary"
                     className="bg-white/90 text-gray-800"
                   >
-                    Villa de luxe
+                    Villa au calme
                   </Badge>
                   <Badge
                     variant="secondary"
                     className="bg-white/90 text-gray-800"
                   >
-                    Vue mer
+                    Proche mer
                   </Badge>
                   <Badge
                     variant="secondary"
                     className="bg-white/90 text-gray-800"
                   >
-                    Piscine chauffée
+                    Piscine privée
                   </Badge>
                 </div>
               </div>
