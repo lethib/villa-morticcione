@@ -4,9 +4,9 @@ import { BaseCard } from "./BaseCard";
 const bedroomsBathImages = [
   "/images/bedrooms_bath/bedroom1/chambre.avif",
   "/images/bedrooms_bath/bedroom1/sdb-1.jpg",
-  "/images/bedrooms_bath/bedroom3/chambre-3.jpg",
-  "/images/bedrooms_bath/bedroom2/sdb-2.jpg",
   "/images/bedrooms_bath/bedroom2/chambre-2.jpg",
+  "/images/bedrooms_bath/bedroom2/sdb-2.jpg",
+  "/images/bedrooms_bath/bedroom3/chambre-3.jpg",
 ];
 
 const data = {
