@@ -35,18 +35,14 @@ export const availabilitiesAndSeason: Record<
     name: "Avril 2025",
     days: 30,
     firstDay: 2, // Tuesday
-    availability: [
-      ...createDays(1, 26, "low", "available"),
-      ...createDays(27, 30, "low", "reserved"),
-    ],
+    availability: [...createDays(1, 30, "low", "available")],
   },
   "mai-25": {
     name: "Mai 2025",
     days: 31,
     firstDay: 4, // Thursday
     availability: [
-      ...createDays(1, 10, "low", "reserved"),
-      ...createDays(11, 16, "low", "available"),
+      ...createDays(1, 16, "low", "available"),
       ...createDays(17, 31, "mid", "available"),
     ],
   },
@@ -54,11 +50,7 @@ export const availabilitiesAndSeason: Record<
     name: "Juin 2025",
     days: 30,
     firstDay: 7, // Sunday
-    availability: [
-      ...createDays(1, 6, "mid", "available"),
-      ...createDays(7, 12, "mid", "reserved"),
-      ...createDays(13, 30, "mid", "available"),
-    ],
+    availability: [...createDays(1, 30, "mid", "available")],
   },
   "juil-25": {
     name: "Juillet 2025",
@@ -66,9 +58,8 @@ export const availabilitiesAndSeason: Record<
     firstDay: 2, // Tuesday
     availability: [
       ...createDays(1, 4, "mid", "available"),
-      ...createDays(5, 11, "high", "reserved"),
-      ...createDays(12, 14, "very-high", "reserved"),
-      ...createDays(15, 31, "very-high", "available"),
+      ...createDays(5, 11, "high", "available"),
+      ...createDays(12, 31, "very-high", "available"),
     ],
   },
   "aout-25": {
@@ -76,9 +67,8 @@ export const availabilitiesAndSeason: Record<
     days: 31,
     firstDay: 5, // Friday
     availability: [
-      ...createDays(1, 2, "very-high", "available"),
-      ...createDays(3, 22, "very-high", "reserved"),
-      ...createDays(23, 29, "high", "reserved"),
+      ...createDays(1, 22, "very-high", "available"),
+      ...createDays(23, 29, "high", "available"),
       ...createDays(30, 31, "mid", "available"),
     ],
   },

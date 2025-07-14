@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Clock, MapPin, Plane } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -183,13 +184,18 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="space-y-2 text-sm text-gray-600">
+                <Link
+                  className="space-y-2 text-sm text-gray-600"
+                  href="https://maps.app.goo.gl/EvVZsiVzPivP6LiQ9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <p>Route de Pinarello</p>
                   <p>20137 Lecci, Corse</p>
-                  <p className="font-mono text-xs bg-gray-100 rounded px-2 py-1 inline-block">
+                  <p className="font-mono text-xs bg-gray-100 rounded px-2 py-1 inline-block hover:text-blue-500">
                     GPS: 41°38&apos;53&quot;N 9°20&apos;40&quot;E
                   </p>
-                </div>
+                </Link>
 
                 <div className="mt-6 space-y-3">
                   <div className="flex items-center gap-3 text-sm">
