@@ -96,6 +96,13 @@ function Hero() {
 }
 
 export default function Home() {
+  const indexToImage = [
+    "/images/outside/terrace/terrace.jpg",
+    "/images/outside/night-outside.jpeg",
+    "/images/outside/outside-2.jpg",
+    "/images/outside/beach.jpg",
+  ];
+
   return (
     <>
       <Hero />
@@ -148,7 +155,7 @@ export default function Home() {
                   className="relative group overflow-hidden rounded-xl shadow-lg"
                 >
                   <Image
-                    src="/images/chambre.jpg"
+                    src={indexToImage[i - 1]}
                     alt={`Villa vue ${i}`}
                     width={200}
                     height={96}
