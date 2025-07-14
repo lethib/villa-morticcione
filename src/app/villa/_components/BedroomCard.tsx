@@ -12,14 +12,14 @@ const bedroomsBathImages = [
 const data = {
   icon: <Bed className="w-6 h-6 text-white" />,
   images: bedroomsBathImages,
-  title: "Chambres & Sanitaires",
+  title: "Chambres & Salles de Bain",
   color: "bg-secondary",
   items: [
     "La villa dispose de 3 chambres, chacune avec sa salle d'eau.",
     "Deux chambres sont équipées d'un lit double de 140cm et la troisième d'un lit double 140cm et d'un lit simple 90 cm.",
     "Un canapé banquette dans le salon permet un couchage supplémentaire.",
     "Un lit parapluie est mis à disposition pour les plus petits.",
-    "La salle de bain de la suite parentale est équipée d'une baignoire et d'un WC.",
+    "La salle de bain de la suite parentale est équipée d'une baignoire et d'un WC supplémentaire.",
   ],
 };
 

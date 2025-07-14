@@ -8,7 +8,6 @@ const outsideImages = [
   "/images/outside/outside-2.jpg",
   "/images/outside/outside-3.jpg",
   "/images/outside/night-outside.jpeg",
-  "/images/outside/beach.jpg",
 ];
 
 const data = {
