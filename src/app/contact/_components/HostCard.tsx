@@ -13,9 +13,6 @@ export const HostCard = () => {
             <h3 className="text-2xl font-semibold text-gray-900">
               Dorothée et Hervé
             </h3>
-            <p className="text-gray-600">
-              Propriétaires de la Villa Morticcione
-            </p>
           </div>
         </div>
 

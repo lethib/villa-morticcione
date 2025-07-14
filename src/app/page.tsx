@@ -66,11 +66,9 @@ function Hero() {
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed font-light">
               Charmante villa située à 1 kilomètre de la magnifique plage de
               Saint Cyprien.
-              <br className="hidden sm:block" />
+              <br className="block" />
               Avec sa piscine privée, elle vous attend pour des vacances de
-              détente,
-              <br className="hidden sm:block" />
-              au grand calme, sous le soleil de la Corse.
+              détente, au grand calme, sous le soleil de la Corse.
             </p>
           </div>
 
@@ -101,7 +99,7 @@ export default function Home() {
     "/images/outside/terrace/terrace.jpg",
     "/images/outside/night-outside.jpeg",
     "/images/outside/outside-2.jpg",
-    "/images/outside/beach.jpg",
+    "/images/outside/outside-3.jpg",
   ];
 
   return (

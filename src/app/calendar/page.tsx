@@ -79,7 +79,7 @@ export default function Calendar() {
           Calendrier & Tarifs
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Consultez nos disponibilités et découvrez nos tarifs selon la saison.
+          Consultez nos tarifs selon la saison.
         </p>
       </div>
 
@@ -90,7 +90,7 @@ export default function Calendar() {
             <CardHeader className="pb-6">
               <CardTitle className="flex items-center gap-2 text-xl text-gray-900">
                 <CalendarIcon className="w-6 h-6 text-primary" />
-                Disponibilités 2025
+                Calendrier 2025
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -133,10 +133,10 @@ export default function Calendar() {
                         Très Haute Saison
                       </span>
                     </div>
-                    <div className="flex items-center gap-2">
+                    {/* <div className="flex items-center gap-2">
                       <div className="w-5 h-5 bg-black rounded"></div>
                       <span className="text-sm text-gray-600">Réservé</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -192,18 +192,8 @@ export default function Calendar() {
                   Forfait Ménage de 200€ par séjour
                 </h4>
                 <p className="text-sm text-gray-600 mb-3">
-                  Ce forfait couvre :
+                  Ce forfait couvre le ménage de fin de séjour.
                 </p>
-                <ul className="space-y-1 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Le ménage de fin de séjour</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>La taxe de séjour</span>
-                  </li>
-                </ul>
               </div>
 
               <div className="bg-white rounded-lg p-4 shadow-sm border border-blue-100">
@@ -211,7 +201,16 @@ export default function Calendar() {
                   Location de linge
                 </h4>
                 <p className="text-sm text-gray-600">
-                  Draps et serviettes de toilette disponibles pour 20€/personne
+                  Draps et serviettes de toilette disponibles pour 20€/personne.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-lg p-4 shadow-sm border border-blue-100">
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  Taxe de séjour
+                </h4>
+                <p className="text-sm text-gray-600">
+                  1,60€ / personne / jour.
                 </p>
               </div>
             </CardContent>
