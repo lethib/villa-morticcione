@@ -189,7 +189,7 @@ export default function Calendar() {
             <CardContent className="space-y-4">
               <div className="bg-white rounded-lg p-4 shadow-sm border border-blue-100">
                 <h4 className="font-semibold text-gray-900 mb-2">
-                  Forfait de 200€ par séjour
+                  Forfait Ménage de 200€ par séjour
                 </h4>
                 <p className="text-sm text-gray-600 mb-3">
                   Ce forfait couvre :
