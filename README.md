@@ -12,7 +12,7 @@
 
 This project explores building a luxury villa rental website using Next.js 15 with the App Router, emphasizing server-side rendering (SSR) and SEO optimization. The aim is to deliver a fast, responsive, and visually refined site that performs well in search engine rankings.
 
-The second goal if this project is to see how far AI can help me building such website, specially on tasks that I don't like (desgin, writing, SEO, etc...)
+The second goal of this project is to explore how far AI can assist in building such a website, especially with tasks that I don't enjoy (design, writing, SEO, etc.).
 
 ## 🧠 Tasks done by AI (Claude Sonnet 4)
 
