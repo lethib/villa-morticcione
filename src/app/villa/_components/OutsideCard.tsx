@@ -6,6 +6,7 @@ const outsideImages = [
   "/images/outside/terrace/terrace-2.jpg",
   "/images/outside/terrace/nigh-terrace.jpg",
   "/images/outside/outside-2.jpg",
+  "/images/outside/outside-3.jpg",
   "/images/outside/night-outside.jpeg",
   "/images/outside/beach.jpg",
 ];
