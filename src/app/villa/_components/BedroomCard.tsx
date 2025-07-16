@@ -13,7 +13,7 @@ const data = {
   icon: <Bed className="w-6 h-6 text-white" />,
   images: bedroomsBathImages,
   title: "Chambres & Salles de Bain",
-  color: "bg-secondary",
+  color: "bg-primary",
   items: [
     "La villa dispose de 3 chambres, chacune avec sa salle d'eau.",
     "Deux chambres sont équipées d'un lit double de 140cm et la troisième d'un lit double 140cm et d'un lit simple 90 cm.",

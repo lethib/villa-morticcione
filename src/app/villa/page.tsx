@@ -71,9 +71,9 @@ export default function Villa() {
       </div>
 
       <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <OutsideCard />
         <BedroomCard />
         <KitchenCard />
-        <OutsideCard />
       </div>
 
       {/* Media Section */}
