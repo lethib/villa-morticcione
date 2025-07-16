@@ -11,7 +11,7 @@ const data = {
   icon: <Utensils className="w-6 h-6 text-white" />,
   images: kitchenImages,
   title: "Cuisine & Salon",
-  color: "bg-primary",
+  color: "bg-secondary",
   items: [
     "La cuisine s'ouvre sur la terrasse qui surplombe la piscine. Elle dispose de tous les équipements nécessaires : Lave-vaisselle, four, four micro-ondes, cafetière Nespresso, bouilloire, grille-pain.",
     "Un lave linge est également installé dans la cuisine.",
