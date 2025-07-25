@@ -15,11 +15,6 @@ export const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState<FormStatus>("idle");
 
-  // Dumb values are passed here to see if the environment variables are set correctly
-  console.warn("SERVICE_ID", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-  console.warn("TEMPLATE_ID", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
-  console.warn("PUBLIC_KEY", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
-
   useEffect(() => {
     emailjs.init({ publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY });
   }, []);
