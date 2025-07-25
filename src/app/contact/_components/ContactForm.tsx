@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
 import { Baby, MessageSquare, Users } from "lucide-react";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 
 type FormStatus = "idle" | "success" | "error";
 
@@ -20,20 +20,22 @@ export const ContactForm = () => {
   console.warn("TEMPLATE_ID", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
   console.warn("PUBLIC_KEY", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
 
+  useEffect(() => {
+    emailjs.init({ publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY });
+  }, []);
+
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     if (
       !form.current ||
       !(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID &&
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID &&
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
       )
     )
       return;
     e.preventDefault();
     setIsLoading(true);
 
-    emailjs.init({ publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY });
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
